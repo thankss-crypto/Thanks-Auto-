@@ -30,7 +30,7 @@ jobs:
           curl -L "https://github.com/martoreto/aauto-sdk/raw/master/aasdk/libs/android-auto-sdk.aar" -o app/libs/android-auto-sdk.aar
 
       - name: Build Debug APK
-        run: gradle assembleDebug
+        run: gradle assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
